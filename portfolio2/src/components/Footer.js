@@ -1,16 +1,13 @@
 import React from 'react';
+import './Component.css'
 
 function Footer() {
   return (
-    <section className="my-5">
-      <h1 id="about">Footer</h1>
-     
-      <div className="my-2">
-        <p>
-          
-        </p>
-      </div>
-    </section>
+    <div className='Nav-Style justify-content-end'>
+    
+
+
+</div>
   );
 }
 

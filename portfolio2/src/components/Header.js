@@ -1,16 +1,13 @@
 import React from 'react';
+import Nav from './Nav'
 
 function Header() {
   return (
-    <section className="my-5">
-      <h1 id="about">Header</h1>
-     
-      <div className="my-2">
-        <p>
-          
-        </p>
-      </div>
-    </section>
+ <div>
+    <Nav>
+        
+    </Nav>
+ </div>
   );
 }
 

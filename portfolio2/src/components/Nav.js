@@ -1,10 +1,16 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
+import './Component.css'
+
 
 function Nav() {
   return (
-   <div>
-       <ul>
+     <> 
+    
+   <div className='Nav-Style justify-content-end'>
+   <p className='headerName'>Sarita Thomas</p>
+   
+       <ul className='ulRow'>
            <li>
                <NavLink
                className='Nav-Link'
@@ -34,7 +40,9 @@ function Nav() {
 
 
    </div>
+   </>
   );
+  
 }
 
 export default Nav;
