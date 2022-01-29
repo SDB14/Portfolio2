@@ -1,13 +1,15 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import {Parallax} from 'react-parallax'
+import {Parallax} from 'react-parallax';
+import coverImage from '../assets/Background.jpeg';
 
 function About() {
   return (
     <>
         <Header></Header>
-        <Parallax bgImage='https://image.shutterstock.com/image-photo/palm-leaves-on-wooden-background-260nw-1060645004.jpg' strength={500}>
+        <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
+        <Parallax bgImage='./Background.jpeg' strength={500}>
             <div style={{height:650}}>
     <section className="my-5">
       <h1 id="about">Who am I?</h1>
