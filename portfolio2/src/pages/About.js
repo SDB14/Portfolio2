@@ -3,15 +3,17 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import {Parallax} from 'react-parallax';
 import coverImage from '../assets/Background.jpeg';
+import './pages.css'
 
 function About() {
   return (
     <>
+
+        {/* <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" /> */}
+        <Parallax bgImage={coverImage} strength={500}>
         <Header></Header>
-        <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
-        <Parallax bgImage='./Background.jpeg' strength={500}>
             <div style={{height:650}}>
-    <section className="my-5">
+    <section className="my-5 textcenter">
       <h1 id="about">Who am I?</h1>
      
       <div className="my-2">
@@ -27,8 +29,9 @@ function About() {
       </div>
     </section>
     </div>
-    </Parallax>
     <Footer></Footer>
+    </Parallax>
+
     </>
   );
 }

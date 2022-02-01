@@ -2,14 +2,19 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Project from '../components/Project';
+import {Parallax} from 'react-parallax';
+import coverImage from '../assets/Background.jpeg';
+import './pages.css'
 
 function Portfolio() {
   return (
 
     <div>
-    <Header></Header>
+    <Parallax bgImage={coverImage} strength={500}>
+        <Header></Header>
+            <div style={{height:650}}>
 
-    <section className="my-5">
+    <section className="my-5 textcenter">
       <h1 id="about">Potfolio</h1>
      <Project></Project>
       <div className="my-2">
@@ -24,7 +29,10 @@ function Portfolio() {
         </p>
       </div>
     </section>
+    </div>
     <Footer></Footer>
+    </Parallax>
+
     </div>
   );
 }
